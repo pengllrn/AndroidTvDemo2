@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.Leanback" >
+        <item name="android:buttonStyle">@style/BtnStyle</item>
+    </style>
+    <style name="TabStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@drawable/tab_focus_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="BtnStyle" parent="@style/Widget.AppCompat.Button">
+        <item name="android:background">@drawable/btn_focus_bg</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+</resources>

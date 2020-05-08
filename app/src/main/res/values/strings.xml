@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AndroidTvDemo2</string>
+    <string name="browse_title"><![CDATA[Videos by Your Company]]></string>
+    <string name="related_movies">Related Videos</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="tab1">Tab一</string>
+    <string name="tab2">Tab二</string>
+    <string name="tab3">Tab三</string>
+
+    <string name="btn1">按钮1</string>
+    <string name="btn2">按钮2</string>
+    <string name="btn3">按钮3</string>
+    <string name="btn4">按钮4</string>
+    <string name="btn5">按钮5</string>
+    <string name="btn6">按钮6</string>
+    <string name="btn7">按钮7</string>
+    <string name="btn8">按钮8</string>
+</resources>

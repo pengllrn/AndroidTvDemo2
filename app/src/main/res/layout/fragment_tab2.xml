@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tab2" />
+
+    <Button
+        android:id="@+id/tab2_btn1"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:text="@string/btn1"
+        android:nextFocusUp="@id/tab2"
+        android:layout_below="@+id/label"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/tab2_btn2"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:text="@string/btn2"
+        android:nextFocusUp="@id/tab2"
+        android:layout_below="@+id/label"
+        android:layout_toEndOf="@+id/tab2_btn1"/>
+
+    <Button
+        android:id="@+id/tab2_btn3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="@string/btn3"
+        android:layout_below="@id/tab2_btn2"
+        android:layout_toEndOf="@id/tab2_btn1"/>
+
+    <Button
+        android:id="@+id/tab2_btn4"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="@string/btn4"
+        android:layout_below="@id/tab2_btn2"
+        android:layout_toEndOf="@id/tab2_btn3"/>
+
+    <Button
+        android:id="@+id/tab2_btn5"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="@string/btn5"
+        android:layout_below="@id/tab2_btn4"
+        android:layout_toEndOf="@id/tab2_btn3"/>
+    <Button
+        android:id="@+id/tab2_btn6"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:text="@string/btn6"
+        android:nextFocusUp="@id/tab2"
+        android:layout_below="@id/label"
+        android:layout_toEndOf="@id/tab2_btn2"/>
+    <Button
+        android:id="@+id/tab2_btn7"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:text="@string/btn7"
+        android:nextFocusUp="@id/tab2"
+        android:layout_below="@id/label"
+        android:layout_toEndOf="@id/tab2_btn6"/>
+    <Button
+        android:id="@+id/tab2_btn8"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="@string/btn8"
+        android:layout_below="@id/tab2_btn6"
+        android:layout_toEndOf="@id/tab2_btn4"/>
+
+</RelativeLayout>

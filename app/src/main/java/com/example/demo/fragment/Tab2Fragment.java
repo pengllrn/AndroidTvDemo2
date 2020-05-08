@@ -1,6 +1,5 @@
 package com.example.demo.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.demo.MainActivity;
 import com.example.demo.R;
-import com.example.demo.SecondActivity;
 
 public class Tab2Fragment extends Fragment implements View.OnClickListener{
     Button tab2_btn1;
@@ -57,9 +56,15 @@ public class Tab2Fragment extends Fragment implements View.OnClickListener{
      */
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(getActivity(), SecondActivity.class);
-        startActivity(intent);
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .add(android.R.id.content, new SecondFragment())
+                .addToBackStack("")
+                .commit();
+        MainActivity activity = (MainActivity) getActivity();
+        //记住跳转位置
+        ViewPagerFragment.focusView = v;
+        //隐藏当前视图，这样在second fragment上移动时，焦点不会跳出
+        activity.container.setVisibility(View.INVISIBLE);
     }
-
 
 }
